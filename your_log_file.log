@@ -1,0 +1,33 @@
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\bioen\Python\Untitled4.py", line 204, in add_task
+    self.save_tasks_to_file()
+  File "C:\Users\bioen\Python\Untitled4.py", line 106, in save_tasks_to_file
+    with open('tasks_data.json', 'w') as outfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'tasks_data.json'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\bioen\Python\Untitled4.py", line 248, in save_update
+    self.save_tasks_to_file()
+  File "C:\Users\bioen\Python\Untitled4.py", line 106, in save_tasks_to_file
+    with open('tasks_data.json', 'w') as outfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'tasks_data.json'
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\bioen\Python\Untitled4.py", line 248, in save_update
+    self.save_tasks_to_file()
+  File "C:\Users\bioen\Python\Untitled4.py", line 106, in save_tasks_to_file
+    with open('tasks_data.json', 'w') as outfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'tasks_data.json'
