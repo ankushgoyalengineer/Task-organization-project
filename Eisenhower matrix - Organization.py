@@ -102,15 +102,15 @@ class EisenhowerMatrixGUI:
             task, date = self.completed_tree.item(item, 'values')
             tasks_data["Completed Tasks"].append({'task': task, 'date': date})
 
-        file_path = os.path.join(os.path.expanduser('~'), r'C:\Users\bioen\Python\Task organization project data\tasks_data.json')
-        with open(r'C:\Users\bioen\Python\Task organization project data\tasks_data.json', 'w') as outfile:
+        file_path = os.path.join(os.path.expanduser('~'), 'tasks_data.json')
+        with open('tasks_data.json', 'w') as outfile:
             json.dump(tasks_data, outfile, indent=4)
     
     def load_tasks_from_file(self):
        
-        file_path = os.path.join(os.path.expanduser('~'), r'C:\Users\bioen\Python\Task organization project data\tasks_data.json')
+        file_path = os.path.join(os.path.expanduser('~'), 'tasks_data.json')
         try:
-            with open(r'C:\Users\bioen\Python\Task organization project data\tasks_data.json', 'r') as infile:
+            with open('tasks_data.json', 'r') as infile:
                 tasks_data = json.load(infile)
 
             for quadrant, tasks in tasks_data.items():
@@ -265,7 +265,7 @@ class EisenhowerMatrixGUI:
 
 
 if __name__ == "__main__":
-    log_file_path = r'C:\Users\bioen\Python\Task organization project data\your_log_file.log'
+    log_file_path = 'log file path'
     with open(log_file_path, "a") as log_file:
         # Redirect standard output and standard error to the log file
         sys.stdout = log_file
